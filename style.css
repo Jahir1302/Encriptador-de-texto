@@ -1,0 +1,297 @@
+body {
+    background: #F3F5FC;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+    font-size: 16px;
+	line-height: 1.5;
+}
+
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+}
+
+.alura {
+    position: absolute;
+}
+
+.encriptador {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    margin: 2.5% 5%;
+    grid-auto-rows: 60vh;
+}
+
+.input {
+    text-align: center;
+}
+
+.output {
+    text-align: center;
+}
+
+.texto-input {
+    margin-top: 130px;
+    margin-left: 0;
+    width: 60%;
+    height: 30vh;
+    padding: 10px;
+    border: 1px #ccc;
+    background: #F3F5FC;
+    margin-bottom: 10px;
+    resize: none;
+    font-size: 2em;
+    color: #0A3871;
+    overflow: hidden;
+}
+
+.input p {
+    position: relative;
+    top: 18vh;
+    right: 14%;
+}
+
+.texto-output {
+    width: 80%;
+    height: 85vh;
+    padding: 30px 15px 0.5px 15px;
+    border: 1px #ccc;
+    background: #FFFFFF;
+    border-radius: 32px;
+    margin-bottom: 10px;
+    box-shadow: 0px 0px 10px #CCC;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.output img{
+    position: relative;
+    top: 15vh;
+}
+
+.output h1 {
+    position: relative;
+    top: 16vh;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #343A40;
+}
+
+.output p{
+    position: relative;
+    top: 19vh;
+    font-size: 1em;
+    color: #495057;
+}
+
+.botones {
+    margin-top: 20vh;
+}
+
+.boton {
+    width: 200px;
+    margin: 10px;
+    border: solid 1px #0A3871;
+    border-radius: 24px;
+    width: 328px;
+    height: 67px;
+    font-size: 1em;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+.boton:hover {
+    transform: scale(1.1);
+}
+
+#encriptar {
+    margin-left: 100px;
+    background-color: #0A3871;
+    color: white;
+}
+
+#desencriptar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.copiar {
+    display: none;
+    position: relative;
+    text-align: center;
+    margin: 1px;
+    top: 60vh;
+}
+
+#copiar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    width: 250px;
+    border: solid 1px #0A3871;
+    border-radius: 24px;
+    width: 320px;
+    height: 67px;
+    font-size: 1em;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+#copiar:hover {
+    transform: scale(1.1);
+}
+
+.footerContenido {
+    position: relative;
+    top: 30vh;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+}
+
+.footerContenido li {
+    display: inline-block;
+    margin: 0 0 0 40px;
+}
+
+.footerContenido svg {
+    color: #0A3871;
+}
+
+.copyright {
+    display: inline-block;
+    color: #0A3871;
+    position: relative;
+    font-weight: bold;
+    left: 20px;
+    margin: 10px;
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+
+    .boton {
+        width: 200px;
+    }
+
+    #encriptar {
+        margin-left: 0
+    }
+
+    .output img {
+        width: 90%;
+    }
+
+
+    #copiar {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .encriptador {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    .texto-input {
+        width: 90%;
+        height: 30vh;
+        margin-left: 0;
+    }
+
+    .input p {
+        position: relative;
+        top: 0;
+        right: 26%;
+    }
+
+    .output {
+        margin-top: 3vh;
+        margin-bottom: 6vh;
+    }
+
+    .texto-output{
+        height: auto;
+        width: auto;
+    }
+
+    .output img {
+        display: none;
+    }
+
+    .output h1 {
+        position: relative;
+        font-size: 1.5em;
+        top: 0;
+        font-weight: bold;
+        color: #343A40;
+    }
+    
+    .output p{
+        position: relative;
+        font-size: 1em;
+        top: 0;
+        color: #495057;
+        margin: 12px;
+    }
+
+    .botones {
+        margin-top: 0vh;
+    }
+
+    #encriptar {
+        margin-left: 0;
+    }
+
+    .copiar {
+        top: auto;
+        margin: 15px;
+    
+    }
+
+    .footerContenido {
+        top: 0;
+        height: 10px
+    }
+
+    .footerContenido li {
+        display: inline-block;
+        margin: 0 0 0 40px;
+    }
+    
+    .footerContenido svg {
+        color: #0A3871;
+    }
+    
+    .copyright {
+        display: block;
+        color: #0A3871;
+        position: relative;
+        font-weight: bold;
+        margin: 0;
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    #encriptar {
+        margin-left: 10px;
+    }
+
+    .encriptador {
+        margin: 2.5%;
+    }
+
+    .input p {
+        position: relative;
+        top: 0;
+        right: 7%;
+    }
+}
